@@ -14,11 +14,62 @@ body{
     margin: 0;
 }
 
+.mainbox {
+    display: table-row;
+}
+.box {
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 450px;
+	max-width: 90%;
+    margin: 2% auto;
+    align-self: center;
+}
+
+.htitle {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #f7f7f7;
+	padding: 20px 40px;
+}
+
+.htitle h1 {
+	margin: 13;
+	/*test*/
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.txt_field {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.txt_field label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.txt_field input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
 .navbar{
     display: flex;
     align-items: center;
     padding: 20px;
-    margin: -10px;
+    margin: 0px;
+    max-width: 100%;
     background:blue;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -49,7 +100,7 @@ p{
 }
 
 .container{
-    max-width: 1300px;
+    max-width: 90%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -140,8 +191,10 @@ p{
 }
 
 .header{
-    background: radial-gradient( grey, white);
-    width: 90%;
+    /*background: radial-gradient( grey, white);*/
+    width: 100%;
+    max-width: fit-content;
+    display: table-row;
 }
 
 .header .row{
@@ -204,25 +257,37 @@ fpp::after{
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
-    padding: 10px;
     display: table-row;
-    height: 0;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 0;
     
 }
 .footer hr{
     border: none;
     background: #b5b5b5;
     height: 1px;
-    margin: 20px 0;
+    max-width: 90%;
+    margin: 20px auto;
+    align-self: center;
 }
 
 .copyright{
     text-align: center;
 }
 
+.payments{
+    
+    align-self: center;
+    width: 90%;
+    align-self: center;
+    margin: 10px 20%;
+}
+
 .payments img{
-    padding-left: 10px;
-    align-content: center;
+    padding: auto ;
+    align-self: center;
     
 }
 
